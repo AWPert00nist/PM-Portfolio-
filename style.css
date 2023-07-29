@@ -1,0 +1,462 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2.section-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+/* Logo and Navigation */
+
+/* Styles for Particle.js background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Set the position of each section to relative */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Styles for the larger buttons in the header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* ... Other styles ... */
+
+/* Hide the header when scrolling down */
+.header.hide {
+  transform: translateY(-100%);
+}
+
+/* Show the header when scrolling up */
+.header.show {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.logo img.logo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-image {
+  animation: rotateLogo 2s infinite alternate; /* Add rotation animation */
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 18px;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff; /* Neon color */
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+header nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the line */
+  background-color: #00ffdd; /* Neon color */
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover::before {
+  width: 100%;
+}
+
+header nav ul li a:hover {
+  color: #00ffdd; /* Change the text color on hover */
+}
+
+/* Styles for the transparent header */
+header.transparent {
+  background-color: transparent;
+}
+
+body {
+  padding-top: 60px;
+  /* Adjust this value to the height of the header */
+}
+
+
+
+
+
+/* Home Section*/
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* Styles for the subtitle */
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.neon {
+  text-shadow: 0 0 10px #00ffdd, 0 0 20px #00ffdd, 0 0 30px #00ffdd, 0 0 40px #00ffdd;
+  animation: neon-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 10px #00ffdd, 0 0 20px #00ffdd, 0 0 30px #00ffdd, 0 0 40px #00ffdd;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffdd, 0 0 30px #00ffdd, 0 0 40px #00ffdd, 0 0 50px #00ffdd;
+  }
+}
+
+
+
+
+/* Main section */
+main {
+  margin-top: 80px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Work Page */
+.work .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 300px; /* Adjust the width as needed */
+  margin-bottom: 30px;
+  margin-right: 15px; 
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+
+.project img {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.project:hover img {
+  transform: scale(1.1); /* Adjust the scaling factor as needed */
+}
+
+.project .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay .text {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Resume Page */
+.resume {
+  margin-top: 80px;
+}
+
+.resume a {
+  display: inline-block;
+  background-color: #444;
+  color: #eee;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.resume a:hover {
+  background-color: #333;
+}
+
+/* About Page */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.about .container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Connect Page */
+.connect {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: #eee;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buttons a:hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
+
+.buttons i {
+  font-size: 24px;
+  background-color: transparent;
+  /* Remove the white background */
+}
+
+/* Styles for the larger buttons */
+.social-button {
+  display: inline-block;
+  font-size: 24px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  color: #0056b3;
+  animation: pulse 1s infinite;
+}
+
+/* Custom animation using Animate.css */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #33333300;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer k {
+  margin: 0;
+  font-size: 10px;
+  align-items: center;
+}
+
+.footer k {
+  color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer k:hover {
+  text-decoration: underline;
+}

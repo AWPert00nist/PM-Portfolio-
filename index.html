@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivam Bajaj's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  
+/* Hide the header when scrolling down */
+.header.hide {
+  transform: translateY(-100%);
+}
+
+/* Show the header when scrolling up */
+.header.show {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+  </style>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+  <div id="particles-js"></div>
+
+
+  <!-- Logo and Navigation -->
+  <header class="transparent">
+    <div class="header-container">
+      <div class="logo">
+        <a href="#home">
+          <img src="logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="resume.pdf" download target="_blank">Resume</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Page -->
+  <section id="home" class="home">
+    <div class="container">
+      <h1 id="headerText">Hi! I'm Shivam Bajaj</h1>
+      <p id="title" class="subtitle"></p>
+    </div>
+  </section>
+
+
+
+<!-- Work Page -->
+<section id="work" class="work">
+  <div class="container">
+    <h2>Work</h2>
+    <div class="projects">
+      <a href="https://project1.com" target="_blank">
+        <div class="project">
+          <img src="Project1.png" alt="Project 1">
+          <div class="overlay">
+            <div class="text">Now.gg | Cloud Gaming Platform</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://project2.com" target="_blank">
+        <div class="project">
+          <img src="Project2.png" alt="Project 2">
+          <div class="overlay">
+            <div class="text">Dell Mobile Connect</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://project3.com" target="_blank">
+        <div class="project">
+          <img src="Project3.png" alt="Project 3">
+          <div class="overlay">
+            <div class="text">BlueStacks 5 Multi-Instance Manager</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://project4.com" target="_blank">
+        <div class="project">
+          <img src="Project4.png" alt="Project 4">
+          <div class="overlay">
+            <div class="text">InfiViz Pulse Dashboard and Mobile App</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Page -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About</h2>
+      <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+      </div>
+      <p>I am Shivam, a Product Manager with 5 years of experience in leading teams and delivering successful products. My expertise lies in understanding user needs, defining product vision, and collaborating with cross-functional teams to bring products to market.</p>
+    </div>
+  </section>
+
+  <!-- Connect Page -->
+  <section class="connect" id="connect" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <h1>Connect With Me</h1>
+    
+    <div class="social">
+      <a href="https://www.linkedin.com/in/shivam-bajaj-99425278" target="_blank" class="social-button" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/MechCoder0" target="_blank" class="social-button" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a href="mailto:reachme.shivambajaj@gmail.com" class="social-button"><i class="fas fa-envelope"></i></a>
+      <a href="https://medium.com/@sbajaj040" class="social-button"><i class="fa-brands fa-medium"></i>
+    </div>
+  </section>
+
+  <!-- Add a footer section -->
+  <section>
+    <footer class="footer">
+      <div class="container">
+        <k>&copy; <span id="currentYear"></span> Shivam Bajaj's Portfolio. All rights reserved.</k>
+      </div>
+    </footer>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+  <script src="particle.js"></script>
+  <script src="animation.js"></script>
+  <script src="title.js"></script>
+  <script src="footer.js"></script>
+
+</body>
+</html>
